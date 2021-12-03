@@ -20,7 +20,8 @@ namespace DataAccessLayer.Concrete.EntityFramework
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            var conStr = _configuration.GetConnectionString("TarTarimDb");
+            //var conStr = _configuration.GetConnectionString("TarTarimDb");
+            var conStr = @"Server=SALIH;Database=TarTarim;Trusted_Connection=true";
             optionsBuilder.UseSqlServer(conStr);
         }
         public DbSet<AgriculturalEngineer> AgriculturalEngineers { get; set; }
