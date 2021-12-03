@@ -10,18 +10,19 @@ namespace TarTarim.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class CustomersController : ControllerBase
+    public class AnswerController : ControllerBase
     {
-        ICustomerService _customerService;
-        public CustomersController(ICustomerService customerService)
+        IAnswerService _answerService;
+
+        public AnswerController(IAnswerService answerService)
         {
-            _customerService = customerService;
+            _answerService = answerService;
         }
 
-        [HttpGet("getCustomerById")]
-        public IActionResult GetCustomerById(int id)
+        [HttpGet("getAnswerById")]
+        public IActionResult GetReplyAnswerById(int id)
         {
-            var result = _customerService.GetCustomerById(id);
+            var result = _answerService.GetAnswer(id);
 
             if (result.Success)
             {

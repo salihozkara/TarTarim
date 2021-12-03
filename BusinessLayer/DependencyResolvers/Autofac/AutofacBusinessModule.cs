@@ -18,9 +18,6 @@ namespace Business.DependencyResolvers.Autofac
             //auth
             builder.RegisterType<JwtHelper>().As<ITokenHelper>();
 
-            builder.RegisterType<EfCustomerDal>().As<ICustomerDal>();
-            builder.RegisterType<CustomerManager>().As<ICustomerService>();
-
             builder.RegisterType<EfQuestionCategoryDal>().As<IQuestionCategoryDal>();
             builder.RegisterType<QuestionCategoryManager>().As<IQuestionCategoryService>();
 

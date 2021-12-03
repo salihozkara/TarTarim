@@ -41,16 +41,11 @@ namespace DataAccessLayer.Concrete.EntityFramework
                 .OnDelete(DeleteBehavior.NoAction);
         }
 
-        public DbSet<AgriculturalEngineer> AgriculturalEngineers { get; set; }
         public DbSet<Answer> Answers { get; set; }
-        public DbSet<Customer> Customers { get; set; }
-        public DbSet<Farmer> Farmers { get; set; }
         public DbSet<Question> Questions { get; set; }
         public DbSet<QuestionCategory> QuestionCategories { get; set; }
         public DbSet<QuestionSubCategory> QuestionSubCategories { get; set; }
         public DbSet<ReplyAnswer> ReplyAnswers { get; set; }
-        public DbSet<TruckDriver> TruckDrivers { get; set; }
-        public DbSet<Veterinary> Veterinaries { get; set; }
         public DbSet<User> Users { get; set; }
         public DbSet<OperationClaim> OperationClaims { get; set; }
         public DbSet<UserOperationClaim> UserOperationClaims { get; set; }
