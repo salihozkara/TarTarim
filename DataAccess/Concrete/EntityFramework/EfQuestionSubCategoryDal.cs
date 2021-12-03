@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer.Concrete.EntityFramework
 {
-    public class EfQuestionSubCategory : EfEntityRepositoryBase<QuestionSubCategory,TarTarimContext> , IQuestionSubCategoryDal
+    public class EfQuestionSubCategoryDal : EfEntityRepositoryBase<QuestionSubCategory,TarTarimContext> , IQuestionSubCategoryDal
     {
     }
 }
