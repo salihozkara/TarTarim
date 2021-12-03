@@ -15,15 +15,32 @@ namespace DataAccessLayer.Concrete.EntityFramework
         {
             _configuration = ServiceTool.ServiceProvider.GetService<IConfiguration>();
         }
-
         
-
+        
+        
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             //var conStr = _configuration.GetConnectionString("TarTarimDb");
             var conStr = @"Server=SALIH;Database=TarTarim;Trusted_Connection=true";
             optionsBuilder.UseSqlServer(conStr);
         }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Answer>()
+                .HasOne(e => e.User)
+                .WithMany()
+                .OnDelete(DeleteBehavior.NoAction); // <--
+            modelBuilder.Entity<ReplyAnswer>()
+                .HasOne(e => e.Answer)
+                .WithMany()
+                .OnDelete(DeleteBehavior.NoAction);
+            modelBuilder.Entity<ReplyAnswer>()
+                .HasOne(e => e.User)
+                .WithMany()
+                .OnDelete(DeleteBehavior.NoAction);
+        }
+
         public DbSet<AgriculturalEngineer> AgriculturalEngineers { get; set; }
         public DbSet<Answer> Answers { get; set; }
         public DbSet<Customer> Customers { get; set; }
