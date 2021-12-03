@@ -1,4 +1,5 @@
-﻿using EntityLayer.Concrete;
+﻿using CoreLayer.Utilities.Results;
+using EntityLayer.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -7,10 +8,10 @@ namespace BusinessLayer.Abstract
 {
     public interface ITruckDriverService
     {
-        List<TruckDriver> GetTruckDrivers();
-        void Add(TruckDriver truckDriver);
-        void Update(TruckDriver truckDriver);
-        void Delete(TruckDriver truckDriver);
-        TruckDriver GetTruckDriverById(int id);
+        IDataResult<List<TruckDriver>> GetTruckDrivers();
+        IResult Add(TruckDriver truckDriver);
+        IResult Update(TruckDriver truckDriver);
+        IResult Delete(TruckDriver truckDriver);
+        IDataResult<TruckDriver> GetTruckDriverById(int id);
     }
 }

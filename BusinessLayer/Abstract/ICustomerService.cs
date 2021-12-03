@@ -1,4 +1,5 @@
-﻿using EntityLayer.Concrete;
+﻿using CoreLayer.Utilities.Results;
+using EntityLayer.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -7,10 +8,10 @@ namespace BusinessLayer.Abstract
 {
     public interface ICustomerService
     {
-        List<Customer> GetCustomer();
-        void Add(Customer customer);
-        void Update(Customer customer);
-        void Delete(Customer customer);
-        Customer GetCustomerById(int id);
+        IDataResult<List<Customer>> GetCustomer();
+        IResult Add(Customer customer);
+        IResult Update(Customer customer);
+        IResult Delete(Customer customer);
+        IDataResult<Customer> GetCustomerById(int id);
     }
 }
