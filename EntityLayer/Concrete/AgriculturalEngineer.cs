@@ -5,7 +5,7 @@ using System.Text;
 
 namespace EntityLayer.Concrete
 {
-    public class Farmers : IEntity
+    public class AgriculturalEngineer : IEntity
     {
         public int Id { get; set; }
         public int UserId { get; set; }
