@@ -1,8 +1,8 @@
 ﻿using Autofac;
 using Autofac.Extras.DynamicProxy;
 using Castle.DynamicProxy;
-using Core.Utilities.Interceptors;
-using Core.Utilities.Security.JWT;
+using CoreLayer.Utilities.Interceptors;
+using CoreLayer.Utilities.Security.JWT;
 
 namespace Business.DependencyResolvers.Autofac
 {
