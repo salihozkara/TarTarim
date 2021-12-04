@@ -10,13 +10,10 @@ namespace DataAccessLayer.Concrete.EntityFramework
 {
     public class EfQuestionDal : EfEntityRepositoryBase<Question, TarTarimContext>, IQuestionDal
     {
-<<<<<<< HEAD
-
-=======
-        public IDataResult<QuestionDto> GetQuestionDto(int id)
+       public IDataResult<QuestionDto> GetQuestionDto(int id)
         {
             return null;
         }
->>>>>>> 99543cdcf4f52ded2c149b958490727804a18db1
+
     }
 }

@@ -3,17 +3,17 @@
     font-weight: 700;
   }
   .navbar-brand span {
-    color: #f4cd2a;
+    color: #ffd012;
   }
-  
+
   .nav-item {
     font-size: 18px;
   }
-  
+
   .nav-item .nav-link {
     color: black !important;
   }
-  
+
   .nav-item .nav-link:hover {
     color: black !important;
   }

@@ -1,0 +1,17 @@
+.bg-green{
+  background-color: #ffd012;
+}
+
+#topics a{
+  color: black;
+  font-weight: 600;
+}
+
+#topics a:hover{
+  color: green;
+  text-decoration: none;
+}
+
+.btn-warning{
+  background-color: #ffd012;
+}
