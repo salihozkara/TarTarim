@@ -12,7 +12,6 @@ namespace DataAccessLayer.Abstract
 {
     public interface IQuestionDal : IEntityRepository<Question>
     {
-        IDataResult<QuestionDto> GetQuestionDto(int id);
-
+        
     }
 }

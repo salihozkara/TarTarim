@@ -3,64 +3,12 @@
     <div class="container mt-5">
       <div class="row m-0 align-items-center">
         <div class="col-md-5">
-          <p id="home-slogan">Lorem ipsum dolor sit amet <span>consectetur adipisicing elit.</span> Esse numquam eaque sint ex sapiente nemo.</p>
+          <p id="home-slogan">Tarlanızdaki problemi, hayvanınızdaki sorunları bizlerle paylaşın. Büyük bir topluluğuz.<span>Tarladan pazara kadar çiftçinin yanındayız!</span></p>
         </div>
         <div class="col-md-7">
           <img class="img-fluid" src="../../../assets/img/tarim.svg" alt="tarim">
         </div>
       </div>
-    </div>
-    <div *ngFor="let c of questionCategories" class="container mt-5">
-
-        <h1>
-          <i class="fas fa-tractor"></i>
-          {{c.name}}
-        </h1>
-
-        <div class="border rounded bg-info p-2">
-          <div class="row justify-content-between m-0">
-            <div class="col-md-7 p-1">Konu Başlığı</div>
-            <div class="col-md-2 p-1">Yorum Sayısı</div>
-            <div class="col-md-2 p-1">Son Yorum</div>
-          </div>
-         </div>
-         <div id="topics">
-          <div class="border rounded">
-            <div class="row justify-content-between m-0">
-              <div class="col-md-7 p-1" *ngFor="let cs of questionSubCategories[c.id]"  routerLink="/questions/id:1">{{cs.name}}</div>
-              <div class="col-md-2 p-1">15</div>
-              <div class="col-md-2 p-1">5dk Önce</div>
-            </div>
-           </div>
-           <div class="border rounded">
-            <div class="row justify-content-between m-0">
-              <div class="col-md-7 p-1">Buğdaylarım için hangi ilacı kullanmalıyım</div>
-              <div class="col-md-2 p-1">15</div>
-              <div class="col-md-2 p-1">5dk Önce</div>
-            </div>
-           </div>
-           <div class="border rounded">
-            <div class="row justify-content-between m-0">
-              <div class="col-md-7 p-1">Buğdaylarım için hangi ilacı kullanmalıyım</div>
-              <div class="col-md-2 p-1">15</div>
-              <div class="col-md-2 p-1">5dk Önce</div>
-            </div>
-           </div>
-           <div class="border rounded">
-            <div class="row justify-content-between m-0">
-              <div class="col-md-7 p-1">Buğdaylarım için hangi ilacı kullanmalıyım</div>
-              <div class="col-md-2 p-1">15</div>
-              <div class="col-md-2 p-1">5dk Önce</div>
-            </div>
-           </div>
-                     <div class="border rounded">
-            <div class="row justify-content-between m-0">
-              <div class="col-md-7 p-1">Buğdaylarım için hangi ilacı kullanmalıyım</div>
-              <div class="col-md-2 p-1">15</div>
-              <div class="col-md-2 p-1">5dk Önce</div>
-            </div>
-           </div>
-         </div>
     </div>
     <div class="container mt-5">
 
@@ -77,43 +25,49 @@
           </div>
          </div>
          <div id="topics">
-          <div class="border rounded">
+           <a href="/questions/id:1">
+            <div class="border rounded">
+              <div class="row justify-content-between m-0">
+                <div class="col-md-7 p-1">Buğdaylarım için hangi ilacı kullanmalıyım.
+                </div>
+                <div class="col-md-2 p-1">5</div>
+                <div class="col-md-2 p-1">15dk Önce</div>
+              </div>
+             </div>
+           </a>
+          <a href="/questions/id:7">
+             <div class="border rounded">
             <div class="row justify-content-between m-0">
-              <div class="col-md-7 p-1">Buğdaylarım için hangi ilacı kullanmalıyım</div>
+              <div class="col-md-7 p-1">Nohutlarım eskisi kadar verimli değil. İçerisi bomboş resmen. Benimle aynı sorunu yaşayan varmı?</div>
+              <div class="col-md-2 p-1">3</div>
+              <div class="col-md-2 p-1">7dk Önce</div>
+            </div>
+           </div>
+          </a>
+
+          <a href="/questions/id:7">
+            <div class="border rounded">
+            <div class="row justify-content-between m-0">
+              <div class="col-md-7 p-1">Bütün patateslerimi köstebekler yiyor. Çıldırmak üzereyim. Ne yapmam gerekiyor bunlardan kurtulmak için?</div>
               <div class="col-md-2 p-1">15</div>
               <div class="col-md-2 p-1">5dk Önce</div>
             </div>
            </div>
-           <div class="border rounded">
+          </a>
+
+          <a href="/questions/id:7">
+             <div class="border rounded">
             <div class="row justify-content-between m-0">
-              <div class="col-md-7 p-1">Buğdaylarım için hangi ilacı kullanmalıyım</div>
-              <div class="col-md-2 p-1">15</div>
-              <div class="col-md-2 p-1">5dk Önce</div>
+              <div class="col-md-7 p-1">İneklerim daha az süt veriyor. Ne yapabilirim?</div>
+              <div class="col-md-2 p-1">0</div>
+              <div class="col-md-2 p-1">1dk Önce</div>
             </div>
            </div>
-           <div class="border rounded">
-            <div class="row justify-content-between m-0">
-              <div class="col-md-7 p-1">Buğdaylarım için hangi ilacı kullanmalıyım</div>
-              <div class="col-md-2 p-1">15</div>
-              <div class="col-md-2 p-1">5dk Önce</div>
-            </div>
-           </div>
-           <div class="border rounded">
-            <div class="row justify-content-between m-0">
-              <div class="col-md-7 p-1">Buğdaylarım için hangi ilacı kullanmalıyım</div>
-              <div class="col-md-2 p-1">15</div>
-              <div class="col-md-2 p-1">5dk Önce</div>
-            </div>
-           </div>
-                     <div class="border rounded">
-            <div class="row justify-content-between m-0">
-              <div class="col-md-7 p-1">Buğdaylarım için hangi ilacı kullanmalıyım</div>
-              <div class="col-md-2 p-1">15</div>
-              <div class="col-md-2 p-1">5dk Önce</div>
-            </div>
-           </div>
+          </a>
+
          </div>
     </div>
+
 
     <div class="container mt-5 pt-5 pb-5 basic-3">
       <div class="row">
