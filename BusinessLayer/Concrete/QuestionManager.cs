@@ -2,6 +2,7 @@
 using CoreLayer.Utilities.Results;
 using DataAccessLayer.Abstract;
 using EntityLayer.Concrete;
+using EntityLayer.Dto;
 using System;
 using System.Collections.Generic;
 using System.Linq;

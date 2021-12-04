@@ -16,8 +16,6 @@ namespace DataAccessLayer.Concrete.EntityFramework
             _configuration = ServiceTool.ServiceProvider.GetService<IConfiguration>();
         }
         
-        
-        
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             //var conStr = _configuration.GetConnectionString("TarTarimDb2");
