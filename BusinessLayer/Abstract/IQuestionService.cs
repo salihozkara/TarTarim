@@ -1,5 +1,6 @@
 ﻿using CoreLayer.Utilities.Results;
 using EntityLayer.Concrete;
+using EntityLayer.Dto;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -13,5 +14,6 @@ namespace BusinessLayer.Abstract
         IResult Update(Question question);
         IResult Delete(Question question);
         IDataResult<Question> GetQuestion(int id);
+        IDataResult<QuestionDto> GetQuestionDto(int id);
     }
 }

@@ -13,16 +13,20 @@ namespace TarTarim.Controllers
     public class QuestionController : ControllerBase
     {
         IQuestionService _questionService;
+        IAnswerService _answerService;
 
-        public QuestionController(IQuestionService questionService)
+        public QuestionController(IQuestionService questionService, IAnswerService answerService)
         {
             _questionService = questionService;
+            _answerService = answerService;
         }
 
         [HttpGet("getQuestionById")]
         public IActionResult GetQuestionById(int id)
         {
             var result = _questionService.GetQuestion(id);
+            
+           
 
             if (result.Success)
             {
