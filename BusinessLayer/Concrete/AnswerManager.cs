@@ -12,7 +12,7 @@ namespace BusinessLayer.Concrete
 {
     public class AnswerManager : IAnswerService
     {
-        IAnswerDal _answerDal;
+        private readonly IAnswerDal _answerDal;
 
         public AnswerManager(IAnswerDal answerDal)
         {
@@ -35,7 +35,10 @@ namespace BusinessLayer.Concrete
         {
             return new SuccessDataResult<Answer>(_answerDal.Get(a => a.Id == id));
         }
-
+        public IDataResult<List<Answer>> GetAnswerByQuestionId(int id)
+        {
+            return new SuccessDataResult<List<Answer>>(_answerDal.GetAll(a => a.QuestionId == id));
+        }
         public IDataResult<List<Answer>> GetAnswers()
         {
             return new SuccessDataResult<List<Answer>>(_answerDal.GetAll());

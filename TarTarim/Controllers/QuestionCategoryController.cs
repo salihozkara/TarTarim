@@ -19,6 +19,11 @@ namespace TarTarim.Controllers
             _questionCategoryService = questionCategoryService;
         }
 
+        [HttpGet]
+        public IActionResult Get()
+        {
+            return Ok(_questionCategoryService.GetQuestionCategories());
+        }
         [HttpGet("getQuestionCategoryById")]
         public IActionResult GetQuestionCategoryById(int id)
         {

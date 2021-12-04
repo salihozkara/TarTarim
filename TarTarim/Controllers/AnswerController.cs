@@ -31,5 +31,17 @@ namespace TarTarim.Controllers
 
             return BadRequest(result);
         }
+        [HttpGet("getAnswerByQuestionId")]
+        public IActionResult GetAnswerByQuestionId(int id)
+        {
+            var result = _answerService.GetAnswerByQuestionId(id);
+
+            if (result.Success)
+            {
+                return Ok(result);
+            }
+
+            return BadRequest(result);
+        }
     }
 }

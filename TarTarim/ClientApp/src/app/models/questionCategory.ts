@@ -1,4 +1,4 @@
-export interface LoginModel{
+export interface QuestionCategoryModel{
   id:number
   name:string
   icon:string

@@ -9,6 +9,7 @@ namespace BusinessLayer.Abstract
     public interface IQuestionSubCategoryService
     {
         IDataResult<List<QuestionSubCategory>> GetQuestionSubCategories();
+        public IDataResult<List<QuestionSubCategory>> GetQuestionSubCategoriesByQuestionCategoryId(int id);
         IResult Add(QuestionSubCategory questionCategory);
         IResult Update(QuestionSubCategory questionCategory);
         IResult Delete(QuestionSubCategory questionCategory);

@@ -31,10 +31,7 @@ namespace DataAccessLayer.Concrete.EntityFramework
                 .HasOne(e => e.User)
                 .WithMany()
                 .OnDelete(DeleteBehavior.NoAction); // <--
-            modelBuilder.Entity<ReplyAnswer>()
-                .HasOne(e => e.Answer)
-                .WithMany()
-                .OnDelete(DeleteBehavior.NoAction);
+            
             modelBuilder.Entity<ReplyAnswer>()
                 .HasOne(e => e.User)
                 .WithMany()

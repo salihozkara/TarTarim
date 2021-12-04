@@ -35,7 +35,10 @@ namespace BusinessLayer.Concrete
         {
             return new SuccessDataResult<List<QuestionSubCategory>>(_questionSubCategoryDal.GetAll());
         }
-
+        public IDataResult<List<QuestionSubCategory>> GetQuestionSubCategoriesByQuestionCategoryId(int id)
+        {
+            return new SuccessDataResult<List<QuestionSubCategory>>(_questionSubCategoryDal.GetAll(s=>s.QuestionCategoryId==id));
+        }
         public IDataResult<QuestionSubCategory> GetQuestionSubCategory(int id)
         {
             return new SuccessDataResult<QuestionSubCategory>(_questionSubCategoryDal.Get(s => s.Id == id));

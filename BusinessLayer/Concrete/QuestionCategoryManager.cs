@@ -13,6 +13,12 @@ namespace BusinessLayer.Concrete
     public class QuestionCategoryManager : IQuestionCategoryService
     {
         IQuestionCategoryDal _questionCategoryDal;
+
+        public QuestionCategoryManager(IQuestionCategoryDal questionCategoryDal)
+        {
+            _questionCategoryDal = questionCategoryDal;
+        }
+
         public IResult Add(QuestionCategory questionCategory)
         {
             _questionCategoryDal.Add(questionCategory);
