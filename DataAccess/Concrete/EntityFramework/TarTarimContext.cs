@@ -20,7 +20,7 @@ namespace DataAccessLayer.Concrete.EntityFramework
         
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            //var conStr = _configuration.GetConnectionString("TarTarimDb");
+            //var conStr = _configuration.GetConnectionString("TarTarimDb2");
             var conStr = @"server=(localdb)\MSSQLLocalDB; database=TarTarimDb; integrated security=true;MultipleActiveResultSets=True;";
             optionsBuilder.UseSqlServer(conStr);
         }

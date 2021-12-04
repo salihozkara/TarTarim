@@ -11,6 +11,14 @@ namespace DataAccessLayer.Concrete.EntityFramework
 {
     public class EfUserDal : EfEntityRepositoryBase<User, TarTarimContext>, IUserDal
     {
+        public void SetClaim(UserOperationClaim userOperationClaim)
+        {
+            using (var context=new TarTarimContext())
+            {
+                context.UserOperationClaims.Add(userOperationClaim);
+                context.SaveChanges();
+            }
+        }
         public List<OperationClaim> GetClaims(User user)
         {
             using (TarTarimContext context = new TarTarimContext())

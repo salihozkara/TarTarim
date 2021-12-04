@@ -7,6 +7,7 @@ namespace BusinessLayer.Abstract
     public interface IUserService
     {
         IDataResult<List<OperationClaim>> GetClaims(User user);
+        IResult SetClaim(UserOperationClaim userOperationClaim);
         IResult Add(User user);
         IDataResult<User> GetByMail(string email);
         IResult Update(User user);

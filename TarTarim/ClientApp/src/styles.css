@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+
+.basic-3 h2 {
+    margin-bottom: 1.25rem;
+    font-size: 36px;
+  }
+  
+  
+  
+  p#home-slogan {
+    font-size: 25px;
+  }
+  
+  p#home-slogan span {
+    color: #599607;
+    font-weight: 700;
+  }

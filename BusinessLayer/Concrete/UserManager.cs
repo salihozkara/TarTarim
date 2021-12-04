@@ -19,6 +19,12 @@ namespace BusinessLayer.Concrete
             _userDal = userDal;
         }
 
+        public IResult SetClaim(UserOperationClaim userOperationClaim)
+        {
+            _userDal.SetClaim(userOperationClaim);
+            return new SuccessResult();
+        }
+
         public IResult Add(User user)
         {
             _userDal.Add(user);

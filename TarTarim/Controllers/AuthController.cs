@@ -1,4 +1,8 @@
-﻿using BusinessLayer.Abstract;
+﻿using System;
+using System.Linq;
+using System.Reflection;
+using BusinessLayer.Abstract;
+using CoreLayer.Entities;
 using CoreLayer.Entities.DTOs;
 using Microsoft.AspNetCore.Mvc;
 

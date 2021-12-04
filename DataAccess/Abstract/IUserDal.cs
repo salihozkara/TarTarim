@@ -11,5 +11,6 @@ namespace DataAccessLayer.Abstract
     public interface IUserDal  :IEntityRepository<User>
     {
         List<OperationClaim> GetClaims(User user);
+        void SetClaim(UserOperationClaim userOperationClaim);
     }
 }

@@ -33,6 +33,7 @@ namespace BusinessLayer.Concrete
                 PasswordSalt = passwordSalt
             };
             _userService.Add(user); //user tablosuna ekleniyor
+            _userService.SetClaim(new UserOperationClaim(){OperationClaimId = userForRegisterDto.OperationClaim,UserId = user.Id});
             return new SuccessDataResult<User>(user, "Kayıt oldu");
         }
 
