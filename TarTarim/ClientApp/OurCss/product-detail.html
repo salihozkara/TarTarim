@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <style>
+     
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light p-3">
+      <a class="navbar-brand" href="index.html"> <span>Tar</span>Tarım </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-4">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Anasayfa</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Soru Sor</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Tohum Bankası</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pazar Yeri</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          <button
+            type="button"
+            class="btn btn-success"
+            data-toggle="modal"
+            data-target="#loginModal"
+          >
+            Giriş Yap
+          </button>
+          <!-- Button trigger modal -->
+          <div
+            class="modal fade p-2"
+            id="loginModal"
+            tabindex="-1"
+            role="dialog"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">
+                    Giriş Yap
+                  </h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <form class="p-3">
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="exampleInputEmail1"
+                      aria-describedby="emailHelp"
+                      placeholder="Enter email"
+                    />
+                    <small id="emailHelp" class="form-text text-muted"
+                      >We'll never share your email with anyone else.</small
+                    >
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="exampleInputPassword1"
+                      placeholder="Password"
+                    />
+                  </div>
+                  <div class="form-check">
+                    <input
+                      type="checkbox"
+                      class="form-check-input"
+                      id="exampleCheck1"
+                    />
+                    <label class="form-check-label" for="exampleCheck1"
+                      >Check me out</label
+                    >
+                  </div>
+                  <div class="modal-footer mt-3">
+                    <button type="submit" class="btn btn-primary">
+                      Giriş Yap
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <button
+            type="button"
+            class="btn btn-info ml-3"
+            data-toggle="modal"
+            data-target="#registerModal"
+          >
+            Kayıt Ol
+          </button>
+          <div
+            class="modal fade p-2"
+            id="registerModal"
+            tabindex="-1"
+            role="dialog"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">
+                    Kayıt Ol
+                  </h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <form class="p-3">
+                  <div class="form-group">
+                    <label for="exampleFormControlInput1">İsim</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="exampleFormControlInput1"
+                      placeholder="name@example.com"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlInput1">Soyisim</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="exampleFormControlInput1"
+                      placeholder="name@example.com"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlSelect1">Mesleğiniz</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                      <option>Çiftçi</option>
+                      <option>Veteriner</option>
+                      <option>Müşteri</option>
+                      <option>Ziraat Mühendisi</option>
+                      <option>Tırcı</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlInput1">Email address</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="exampleFormControlInput1"
+                      placeholder="name@example.com"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlInput1">Şifre</label>
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="exampleFormControlInput1"
+                      placeholder="Şifreniz"
+                    />
+                  </div>
+
+                  <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary">
+                      Kayıt Ol
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="page-top" style="background:url('assets/img/page-top-img.png')">
+      <div class="content">
+        <h2>
+         <i class="fa fa-line-chart"></i>&nbsp;Teklif Verin veya Teklifler Alın!
+        </h2>
+          <p class="description">Beğendiğiniz ilanlara uygun teklifler verebilir veya yayınladığınız ilanlar için onlarca teklif alabilirsiniz.</p>
+      </div>
+    </section>
+
+    <main>
+      <div class="container mt-5 mb-5">
+        <div class="row justify-content-between">
+          <div class="col-md-3 text-center">
+            <div>
+              <img class="rounded-circle" src="https://icon-library.com/images/avatar-icon-images/avatar-icon-images-4.jpg" width="125" height="125">   
+            </div>
+            <div>
+              <h5 class="mt-3">Salih Özkara</h5>
+              <button class="btn btn-danger mt-5">Teklif Ver</button>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <h1 class="mb-3">Elma</h1>
+            <img src="assets/img/elma.jpeg" class="img-fluid rounded" alt="">
+          </div>
+          <div class="col-md-4" id="product-detail">
+            <p class="product-info"><span class="text-secondary">İlan Tarihi : </span> 24.02.2021</p>
+            <p class="product-info"><span class="text-secondary">Lokasyon : </span> Turgutlu / Manisa</p>
+            <p class="product-info"><span class="text-secondary">Kimden : </span> Üretici</p>
+            <p class="product-info"><span class="text-secondary">Fiyat (Kg Başına) : </span> 33₺</p>
+            <p class="product-info"><span class="text-secondary">Miktar : </span> 500 kg</p>
+          </div>
+        </div>
+      </div>
+    </main>
+   
+
+    <footer class="page-footer bg-light">
+      <div class="container">
+        <div class="row justify-content-between mb-5">
+          <div class="col-lg-3 py-3">
+            <h3><span>Tar</span>Tarım</h3>
+            <p>Bizimle her zaman iletişime geçebilirsiniz.</p>
+
+            <p><a href="#">info@tartarim.com</a></p>
+            <p><a href="#">444 5746</a></p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-6 py-2">
+            <p id="copyright">
+              © 2020 <a href="#">TarTarım</a>. Tüm hakları sakladır
+            </p>
+          </div>
+          <div class="col-sm-6 py-2 text-right">
+            <div class="d-inline-block px-3">
+              <a href="#">Gizlilik Koşulları</a>
+            </div>
+            <div class="d-inline-block px-3">
+              <a href="#contact">Bize Ulaşın</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- .container -->
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

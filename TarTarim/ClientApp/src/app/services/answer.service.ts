@@ -19,4 +19,10 @@ export class AnswerService {
     paramaters.set("id",id);
     return this.httpClient.get<ListResponseModel<AnswerModel>>(ApiUrlHelper.getUrlWithParameters("Answer/getAnswerByQuestionId",paramaters))
   }
+  getAnswersForQuestions(id:number){
+    let paramaters = new Map<string, string | number | boolean>();
+    paramaters.set("id",id);
+    return this.httpClient.get<number>(ApiUrlHelper.getUrlWithParameters("Answer/getAnswersForQuestions",paramaters))
+
+  }
 }
