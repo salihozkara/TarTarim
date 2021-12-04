@@ -1,0 +1,94 @@
+<main class="container">
+    <h2 class="mb-5">Hangi Marka SSD Almalıyım?</h2>
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#">Anasayfa</a></li>
+      <li class="breadcrumb-item"><a href="#">Tarım</a></li>
+    </ol>
+  </nav>
+  <div class="questions">
+    <div class="question-item">
+        <div class="bg-light p-3">
+            <img class="rounded-circle" src="https://icon-library.com/images/avatar-icon-images/avatar-icon-images-4.jpg" width="35">   
+            <span>Salih Özkara</span> 
+            <span class="float-right">04.12.2021</span>
+          </div>
+        <div class="border border-primary p-4 rounded">
+            <p>
+              Ssd alacağım sizce
+              https://www.hepsiburada.com/hp-x-2yy44aa-hp-500gb-ex900-m2-nvme-pcie-2100-1500mbs-3d-tlc-nand-ssd-p-HBCV00000BF163?magaza=B%c4%b0LPA&url_src=and-product-detail
+              Bunu mu almalıyım yoksa
+              https://www.hepsiburada.com/kingston-nv1-500gb-2100-1700mb-s-m-2-2280-nvme-ssd-snvs-500g-p-HBCV000005TK8Q?magaza=Techburada&url_src=and-product-detail
+              Bunu mu almalıyım?
+            </p>
+            <i class="fas fa-reply float-right"></i>
+        </div>
+    </div>
+    <div class="question-item">
+        <div class="bg-light p-3">
+            <img class="rounded-circle" src="https://icon-library.com/images/avatar-icon-images/avatar-icon-images-4.jpg" width="35">   
+            <span>Salih Özkara</span> 
+            <span class="float-right">04.12.2021</span>
+          </div>
+        <div class="border border-primary p-4 rounded">
+            <div class="border rounded">
+                <div class="ml-2 p-1">
+                  <span class="text-primary">CoderXl</span> dedi ki :
+                </div>
+                <blockquote class="bg-warning text-white p-3 m-0">
+                  The Kadence Importer allows you to easily import all including
+                  images, from any of our Kadence themes demos. When you install a
+                  Kadence theme, the importer will automatically see what theme you
+                  are using and give you options to import anyone of those themes
+                </blockquote>
+              </div>
+              <p>
+                Ssd alacağım sizce
+                https://www.hepsiburada.com/hp-x-2yy44aa-hp-500gb-ex900-m2-nvme-pcie-2100-1500mbs-3d-tlc-nand-ssd-p-HBCV00000BF163?magaza=B%c4%b0LPA&url_src=and-product-detail
+                Bunu mu almalıyım yoksa
+                https://www.hepsiburada.com/kingston-nv1-500gb-2100-1700mb-s-m-2-2280-nvme-ssd-snvs-500g-p-HBCV000005TK8Q?magaza=Techburada&url_src=and-product-detail
+                Bunu mu almalıyım?
+              </p>
+              <i class="fas fa-reply float-right"></i>
+        </div>
+     
+    </div>
+    <div class="question-item">
+        <div class="bg-light p-3">
+            <img class="rounded-circle" src="https://icon-library.com/images/avatar-icon-images/avatar-icon-images-4.jpg" width="35">   
+            <span>Salih Özkara</span> 
+            <span class="float-right">04.12.2021</span>
+          </div>
+        <div class="border border-primary p-4 rounded">
+            <div class="border rounded">
+                <div class="ml-2 p-1">
+                  <span class="text-primary">CoderXl</span> dedi ki :
+                </div>
+                <blockquote class="bg-warning text-white p-3 m-0">
+                  The Kadence Importer allows you to easily import all including
+                  images, from any of our Kadence themes demos. When you install a
+                  Kadence theme, the importer will automatically see what theme you
+                  are using and give you options to import anyone of those themes
+                </blockquote>
+              </div>
+              <p>
+                Ssd alacağım sizce
+                https://www.hepsiburada.com/hp-x-2yy44aa-hp-500gb-ex900-m2-nvme-pcie-2100-1500mbs-3d-tlc-nand-ssd-p-HBCV00000BF163?magaza=B%c4%b0LPA&url_src=and-product-detail
+                Bunu mu almalıyım yoksa
+                https://www.hepsiburada.com/kingston-nv1-500gb-2100-1700mb-s-m-2-2280-nvme-ssd-snvs-500g-p-HBCV000005TK8Q?magaza=Techburada&url_src=and-product-detail
+                Bunu mu almalıyım?
+              </p>
+              <i class="fas fa-reply float-right"></i>
+        </div>   
+    </div>
+    
+    <form (ngSubmit)="yorumYap(yorum)" *ngIf="isAuthenticated">
+      <div class="form-group col-md-8 mt-5">
+        <label for="exampleFormControlTextarea1">Yorum</label>
+        <textarea name="yorum" class="form-control col-md-12 mb-3" id="exampleFormControlTextarea1" rows="6" #yorum></textarea>
+        <button type="submit" class="btn btn-success float-right">Yorum Ekle</button>
+      </div>
+    </form>
+
+  </div>
+</main>

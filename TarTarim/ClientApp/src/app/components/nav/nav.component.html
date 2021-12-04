@@ -1,0 +1,33 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light p-3">
+    <a class="navbar-brand" routerLink="">
+        <span>Tar</span>Tarım
+      </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-4">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Anasayfa</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Soru Sor</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Tohum Bankası</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Pazar Yeri</a>
+            </li>
+        </ul>
+      <ul  class="navbar-nav ml-auto" *ngIf="!isAuthenticated">
+          <button type="button" class="btn btn-success" data-toggle="modal" data-target="#loginModal">Giriş Yap</button>
+          <!-- Button trigger modal -->
+          <app-login></app-login>
+
+          <button type="button" class="btn btn-info ml-3" data-toggle="modal" data-target="#registerModal">Kayıt Ol</button>
+          <app-register></app-register>
+      </ul>
+      <button *ngIf="isAuthenticated" class="btn btn-primary nav-item ml-auto" (click)="logOut()">çıkış</button>
+    </div>
+</nav>

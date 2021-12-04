@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/style.css">
+
+  </head>
+  <body>
+      
+    <nav class="navbar navbar-expand-lg navbar-light bg-light p-3">
+        <a class="navbar-brand" href="index.html">
+            <span>Tar</span>Tarım
+          </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-4">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Anasayfa</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Soru Sor</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Tohum Bankası</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Pazar Yeri</a>
+                </li>
+            </ul>
+          <ul class="navbar-nav ml-auto">
+              <button type="button" class="btn btn-success" data-toggle="modal" data-target="#loginModal">Giriş Yap</button>
+              <!-- Button trigger modal -->
+              <div class="modal fade p-2" id="loginModal" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Giriş Yap</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <form class="p-3">
+                        
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                          </div>
+                          <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                          </div>
+                          <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                          </div>
+        <div class="modal-footer mt-3">
+            <button type="submit" class="btn btn-primary">Giriş Yap</button>
+        </div>
+    </form>
+      </div>
+    </div>
+            </div>
+
+              <button type="button" class="btn btn-info ml-3" data-toggle="modal" data-target="#registerModal">Kayıt Ol</button>
+              <div class="modal fade p-2" id="registerModal" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Kayıt Ol</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <form class="p-3">
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">İsim</label>
+                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                          </div>
+                          <div class="form-group">
+                            <label for="exampleFormControlInput1">Soyisim</label>
+                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                          </div>
+                          <div class="form-group">
+                            <label for="exampleFormControlSelect1">Mesleğiniz</label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                              <option>Çiftçi</option>
+                              <option>Veteriner</option>
+                              <option>Müşteri</option>
+                              <option>Ziraat Mühendisi</option>
+                              <option>Tırcı</option>
+                            </select>
+                          </div>
+                        <div class="form-group">
+                          <label for="exampleFormControlInput1">Email address</label>
+                          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Şifre</label>
+                            <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="Şifreniz">
+                          </div>
+                   
+        <div class="modal-footer">
+            <button type="submit" class="btn btn-primary">Kayıt Ol</button>
+        </div>
+    </form>
+      </div>
+    </div>
+            </div>
+          </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+      <div class="row m-0 align-items-center">
+        <div class="col-md-5">
+          <p id="home-slogan">Lorem ipsum dolor sit amet <span>consectetur adipisicing elit.</span> Esse numquam eaque sint ex sapiente nemo.</p>
+        </div>
+        <div class="col-md-7">
+          <img class="img-fluid" src="assets/img/tarim.svg" alt="tarim">
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-5">
+
+        <h1>
+          <i class="fas fa-tractor"></i>
+          Tarım
+        </h1>
+
+        <div class="border rounded bg-info p-2">
+          <div class="row justify-content-between m-0">
+            <div class="col-md-7 p-1">Konu Başlığı</div>
+            <div class="col-md-2 p-1">Yorum Sayısı</div>
+            <div class="col-md-2 p-1">Son Yorum</div>
+          </div>
+         </div>
+         <div id="topics">
+          <div class="border rounded">
+            <div class="row justify-content-between m-0">
+              <div class="col-md-7 p-1">Buğdaylarım için hangi ilacı kullanmalıyım</div>
+              <div class="col-md-2 p-1">15</div>
+              <div class="col-md-2 p-1">5dk Önce</div>
+            </div>
+           </div>
+           <div class="border rounded">
+            <div class="row justify-content-between m-0">
+              <div class="col-md-7 p-1">Buğdaylarım için hangi ilacı kullanmalıyım</div>
+              <div class="col-md-2 p-1">15</div>
+              <div class="col-md-2 p-1">5dk Önce</div>
+            </div>
+           </div>
+           <div class="border rounded">
+            <div class="row justify-content-between m-0">
+              <div class="col-md-7 p-1">Buğdaylarım için hangi ilacı kullanmalıyım</div>
+              <div class="col-md-2 p-1">15</div>
+              <div class="col-md-2 p-1">5dk Önce</div>
+            </div>
+           </div>
+           <div class="border rounded">
+            <div class="row justify-content-between m-0">
+              <div class="col-md-7 p-1">Buğdaylarım için hangi ilacı kullanmalıyım</div>
+              <div class="col-md-2 p-1">15</div>
+              <div class="col-md-2 p-1">5dk Önce</div>
+            </div>
+           </div>
+                     <div class="border rounded">
+            <div class="row justify-content-between m-0">
+              <div class="col-md-7 p-1">Buğdaylarım için hangi ilacı kullanmalıyım</div>
+              <div class="col-md-2 p-1">15</div>
+              <div class="col-md-2 p-1">5dk Önce</div>
+            </div>
+           </div>
+         </div>
+    </div>
+
+    <div class="container mt-5 pt-5 pb-5 basic-3">
+      <div class="row">
+          <div class="col-lg-6">
+              <div class="text-container">
+                  <h2>Organik tohumlarınız mı var?</h2>
+                  <p>
+                    Tohumlarınızı tohum bankamıza kaydedin, uzman ekiplerle tohumlarınızı incelemeye gelelim. 
+                     Hem ülkemizde bulunan organik tohum ihtiyacına katkıda bulunun, hem de siz bir şeyler kazanın.
+                  </p>
+                  <a href="#" class="btn btn-warning">Tohumunuzu Kaydedin</a>
+              </div> <!-- end of text-container -->
+          </div> <!-- end of col -->
+          <div class="col-lg-6">
+              <img class="img-fluid rounded" src="assets/img/filiz.jpg" alt="alternative">
+          </div> <!-- end of col -->
+      </div> <!-- end of row -->
+  </div>
+
+  <footer class="page-footer bg-light">
+    <div class="container">
+      <div class="row justify-content-between mb-5">
+        <div class="col-lg-3 py-3">
+          <h3> <span>Tar</span>Tarım </h3>
+          <p>Bizimle her zaman iletişime geçebilirsiniz.</p>
+
+          <p><a href="#">info@tartarim.com</a></p>
+          <p><a href="#">444 5746</a></p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-6 py-2">
+          <p id="copyright">© 2020 <a href="#">TarTarım</a>. Tüm hakları sakladır</p>
+        </div>
+        <div class="col-sm-6 py-2 text-right">
+          <div class="d-inline-block px-3">
+            <a href="#">Gizlilik Koşulları</a>
+          </div>
+          <div class="d-inline-block px-3">
+            <a href="#contact">Bize Ulaşın</a>
+          </div>
+        </div>
+      </div>
+    </div> <!-- .container -->
+  </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
