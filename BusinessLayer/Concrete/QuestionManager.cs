@@ -37,6 +37,16 @@ namespace BusinessLayer.Concrete
             return new SuccessDataResult<Question>(_questionDal.Get(q => q.Id == id));
         }
 
+        public IDataResult<QuestionDto> GetQuestionDto(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public IDataResult<List<Question>> GetQuestionByCategoryId(int id)
+        {
+            return new SuccessDataResult<List<Question>>(_questionDal.GetAll(q => q.QuestionSubCategoryId == id));
+        }
+
         public IDataResult<List<Question>> GetQuestions()
         {
             return new SuccessDataResult<List<Question>>(_questionDal.GetAll());

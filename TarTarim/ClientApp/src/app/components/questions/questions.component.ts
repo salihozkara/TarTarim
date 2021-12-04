@@ -20,16 +20,14 @@ export class QuestionsComponent implements OnInit {
   ngOnInit(): void {
     this.isAuthenticated=this.authService.isAuthenticated();
     this.activatedRoute.params.subscribe(p=>{
-      if(p["question"]){this.questionId=p["id"];this.getAnswers()}
+      if(p["id"]){this.questionId=p["id"];this.getAnswers()}
     })
   }
   getAnswers(){
     this.answerService.getAnswerByQuestionId(this.questionId).subscribe(r=>this.answers=r.data)
   }
-  replyAnswer(yorum){
+  replyAnswer(answer){
 
-    this.answerService.getAnswerByQuestionId(2).subscribe(r=>console.log("aaaa",r))
-
-    yorum.value=""
+    answer.value=""
   }
 }

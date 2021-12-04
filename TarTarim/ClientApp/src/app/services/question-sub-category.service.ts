@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import {ListResponseModel} from "../models/responseModels";
-import {AnswerModel} from "../models/answerModel";
 import {ApiUrlHelper} from "../helpers/apiHelper";
 import {QuestionSubCategoryModel} from "../models/questionSubCategoryModel";
 
