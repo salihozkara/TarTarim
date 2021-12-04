@@ -33,7 +33,7 @@ namespace BusinessLayer.Concrete
 
         public IDataResult<ReplyAnswer> GetReplyAnswer(int id)
         {
-            return new SuccessDataResult<ReplyAnswer>(_replyAnswerDal.Get(r => r.Id == id));
+            return new SuccessDataResult<ReplyAnswer>(_replyAnswerDal.Get(r => r.AnswerId == id));
         }
 
         public IDataResult<List<ReplyAnswer>> GetReplyAnswers()

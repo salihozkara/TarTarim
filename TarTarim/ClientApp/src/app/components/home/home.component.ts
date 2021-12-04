@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {QuestionCategoryModel} from "../../models/questionCategory";
 import {QuestionCategoryService} from "../../services/question-category.service";
 import {QuestionSubCategoryService} from "../../services/question-sub-category.service";
+import {AnswerService} from "../../services/answer.service";
 
 @Component({
   selector: 'app-home',
@@ -10,16 +11,17 @@ import {QuestionSubCategoryService} from "../../services/question-sub-category.s
 })
 export class HomeComponent implements OnInit {
 
-  constructor(private questionCategoryService:QuestionCategoryService,private questionSubCategoryService:QuestionSubCategoryService) { }
+  constructor(private questionCategoryService:QuestionCategoryService,private questionSubCategoryService:QuestionSubCategoryService,
+              private answerService:AnswerService) { }
   questionCategories:QuestionCategoryModel[]
   questionSubCategories=[]
+  answersCount=[]
   getSubcategory(id: number) {
-    let result=this.questionSubCategoryService.getQuestionCategoryById(id).subscribe(r=>this.questionSubCategories[id]=r.data)
+    this.questionSubCategoryService.getQuestionCategoryById(id).subscribe(r=>{this.questionSubCategories[id]=r.data;})
   }
   ngOnInit(): void {
     this.questionCategoryService.getQuestionCategories().subscribe(r=>{this.questionCategories=r.data
     r.data.forEach(d=>this.getSubcategory(d.id))})
-
   }
 
 }

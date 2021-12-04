@@ -15,6 +15,8 @@ import { RegisterComponent } from './components/register/register.component';
 import { HomeComponent } from './components/home/home.component';
 import { QuestionsComponent } from './components/questions/questions.component';
 import { AuthInterceptor } from './interceptors/auth.interceptor';
+import { ProductComponent } from './components/product/product.component';
+import { ProductDetailComponent } from './components/product-detail/product-detail.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { AuthInterceptor } from './interceptors/auth.interceptor';
     LoginComponent,
     RegisterComponent,
     HomeComponent,
-    QuestionsComponent
+    QuestionsComponent,
+    ProductComponent,
+    ProductDetailComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),

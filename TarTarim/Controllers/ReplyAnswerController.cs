@@ -19,7 +19,7 @@ namespace TarTarim.Controllers
             _replyAnswerService = replyAnswerService;
         }
 
-        [HttpGet("getReplyAnswerById")]
+        [HttpGet("getReplyAnswerByReplyId")]
         public IActionResult GetReplyAnswerById(int id)
         {
             var result = _replyAnswerService.GetReplyAnswer(id);

@@ -31,6 +31,12 @@ namespace TarTarim.Controllers
 
             return BadRequest(result);
         }
+
+        [HttpGet("getAnswersForQuestions")]
+        public IActionResult GetAnswersForQuestions(int id)
+        {
+            return Ok(_answerService.GetAnswerByQuestionId(id).Data.Count);
+        }
         [HttpGet("getAnswerByQuestionId")]
         public IActionResult GetAnswerByQuestionId(int id)
         {

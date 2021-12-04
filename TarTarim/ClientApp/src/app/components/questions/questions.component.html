@@ -1,4 +1,5 @@
 <main class="container">
+<<<<<<< HEAD
     <h2 class="mb-5">Bütün patateslerimi köstebekler yiyor. </h2>
   <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
@@ -6,6 +7,9 @@
       <li class="breadcrumb-item"><a href="#">Tarım</a></li>
     </ol>
   </nav>
+=======
+    <h2 class="mb-5">{{question.title}}</h2>
+>>>>>>> 99543cdcf4f52ded2c149b958490727804a18db1
   <div class="questions">
     <div class="question-item">
         <div class="bg-light p-3">
@@ -63,6 +67,7 @@
               <i class="fas fa-reply float-right"></i>
         </div>
     </div>
+<<<<<<< HEAD
 
     <div class="question-item">
       <div class="bg-light p-3">
@@ -79,8 +84,12 @@
   </div>
 
     <form (ngSubmit)="yorumYap(yorum)" *ngIf="isAuthenticated">
+=======
+    
+    <form (ngSubmit)="replyAnswer(yorum)" *ngIf="isAuthenticated">
+>>>>>>> 99543cdcf4f52ded2c149b958490727804a18db1
       <div class="form-group col-md-8 mt-5">
-        <label for="exampleFormControlTextarea1">Yorum</label>
+        <label for="exampleFormControlTextarea1">Cevap</label>
         <textarea name="yorum" class="form-control col-md-12 mb-3" id="exampleFormControlTextarea1" rows="6" #yorum></textarea>
         <button type="submit" class="btn btn-success float-right">Yorum Ekle</button>
       </div>

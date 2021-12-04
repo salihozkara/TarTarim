@@ -1,0 +1,42 @@
+#product-detail{
+    margin-top: 90px;
+  }
+
+  .product-info{
+    font-size: 20px;
+  }
+
+  .page-top {
+height: 350px;
+width: 100%;
+position: relative;
+}
+
+.page-top .content {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 40px 0;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+    .page-top .content .title {
+        font-family: Montserrat-ExtraBold;
+        font-size: 24px;
+        color: #343434;
+    }
+
+        .page-top .content .title i {
+            color: #5E8012;
+        }
+
+    .page-top .content .description {
+        color: #000;
+        font-size: 21px;
+    }
+
+    main{
+      margin-bottom: 150px;
+      margin-top: 150px;
+    }
